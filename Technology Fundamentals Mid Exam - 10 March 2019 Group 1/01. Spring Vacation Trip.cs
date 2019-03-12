@@ -1,6 +1,6 @@
 using System;
 
-namespace p01
+namespace p01.Spring_Vacation
 {
     class Program
     {
