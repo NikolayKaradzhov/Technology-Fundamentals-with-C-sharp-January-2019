@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace p02
+namespace p02.Hello_France
 {
     class Program
     {
