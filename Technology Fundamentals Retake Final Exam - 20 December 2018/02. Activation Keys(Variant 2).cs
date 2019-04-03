@@ -9,10 +9,21 @@ namespace 02.Activation_Keys2
     {
         static void Main(string[] args)
         {
+            //Split before match, so we can have a string with start of line(^) and end of string($)
             string[] gameKeys = Console.ReadLine().Split("&");
 
-            string pattern = @"((?<divider>&)|(?<key>[A-Za-z0-9]{16,25}))";
-
+            string pattern = @"(?<key>^[a-zA-Z0-9]{16,25}$)";
+            /* 
+            t1kjZU764zIME6Dl9ryD0g1U8        ------------   MATCH
+            &
+            -P4*(`Q>:x8\yE1{({X/Hoq!gR.      ------------   DO NOT MATCH
+            &
+            rg93bXgkmILW188m                 ------------   MATCH
+            &
+            KroGf1prUdxdA4ln                 ------------   MATCH
+            &
+            U3WH9kXPY0SncCfs                 ------------   MATCH
+            */  
             var order = new Regex(pattern);
 
             List<string> keys = new List<string>();
