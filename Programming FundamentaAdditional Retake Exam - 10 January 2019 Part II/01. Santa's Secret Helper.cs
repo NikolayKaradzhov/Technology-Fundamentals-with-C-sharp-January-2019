@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace 01.Santas Secret Helper
+namespace p01.Santas_Secret_Helper
 {
     class Program
     {
