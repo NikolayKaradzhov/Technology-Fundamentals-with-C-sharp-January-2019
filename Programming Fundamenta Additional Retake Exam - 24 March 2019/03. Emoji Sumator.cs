@@ -14,8 +14,17 @@ namespace p03.Emoji_Sumator
             string emojiCode = Console.ReadLine();
             string emojiCodeToWord = string.Empty;
             int emojiTotalPower = 0;
-
+                               //Positive Lookbehind     //Positive Lookahead
             string pattern = @"(?<= )(?<emoji>:[a-z]{4,}:)(?= |,|\.|!|\?)";
+            
+            /*
+            Hello I am Mark from :England: and I am :one: :seven: years old, I have a :hamster:.as pet.
+
+            In the Sofia Zoo there are many animals, such as :ti ger:, :elephan:t, :monk3y:, :goriLLa:, :fox:.
+            :sunny: 
+            :smiley: 
+            :smiley:.
+            */
 
             Regex order = new Regex(pattern);
 
